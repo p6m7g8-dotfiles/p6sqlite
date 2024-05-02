@@ -36,10 +36,16 @@
 ### p6sqlite/lib/db.sh
 
 - p6_sqlite_db_create()
+- p6_sqlite_db_drop(db)
+
+### p6sqlite/lib/sql.sh
+
+- stream  = p6_sqlite_filter_sql_run(db, [fmt=table])
+- stream  = p6_sqlite_sql_run()
 
 ### p6sqlite/lib/table.sh
 
-- p6_sqlite_file_to_table()
+- p6_sqlite_filter_pipe_to_table()
 
 ## Hierarchy
 
@@ -49,9 +55,10 @@
 ├── init.zsh
 └── lib
     ├── db.sh
+    ├── sql.sh
     └── table.sh
 
-2 directories, 4 files
+2 directories, 5 files
 ```
 
 ## Author
