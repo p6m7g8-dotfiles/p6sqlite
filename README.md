@@ -51,12 +51,12 @@
 
 ```text
 .
-├── README.md
 ├── init.zsh
-└── lib
-    ├── db.sh
-    ├── sql.sh
-    └── table.sh
+├── lib
+│   ├── db.sh
+│   ├── sql.sh
+│   └── table.sh
+└── README.md
 
 2 directories, 5 files
 ```
