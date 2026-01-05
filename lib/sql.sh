@@ -15,6 +15,7 @@ p6_sqlite_sql_run() {
     local file="$2"
     local fmt="${3:-table}"
 
+    # shellcheck disable=2086
     sqlite3 "$db" -$fmt <"$file"
 
     p6_return_stream
@@ -38,6 +39,7 @@ p6_sqlite_filter_sql_run() {
     local db="$1"
     local fmt="${2:-table}"
 
+    # shellcheck disable=2086
     sqlite3 "$db" -$fmt
 
     p6_return_stream

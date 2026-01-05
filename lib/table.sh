@@ -17,7 +17,8 @@ p6_sqlite_filter_pipe_to_table() {
     local line
     while read -r line; do
         if ! p6_string_blank "$line"; then
-            local values=$(p6_echo "$line" | p6_filter_sql_escape_single_quote | p6_filter_translate_words_to_sql_list "$sep")
+            local values
+            values=$(p6_echo "$line" | p6_filter_sql_escape_single_quote | p6_filter_translate_words_to_sql_list "$sep")
             sqlite3 "$db" "INSERT INTO $table ($column_list) VALUES ('$values');"
         fi
     done
