@@ -5,7 +5,6 @@
 #
 # Function: p6_sqlite_filter_pipe_to_table()
 #
-#  Environment:	 INSERT
 #>
 ######################################################################
 p6_sqlite_filter_pipe_to_table() {
