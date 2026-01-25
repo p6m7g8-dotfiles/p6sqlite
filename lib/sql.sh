@@ -3,7 +3,12 @@
 ######################################################################
 #<
 #
-# Function: stream  = p6_sqlite_sql_run()
+# Function: stream  = p6_sqlite_sql_run(db, file, [fmt=table])
+#
+#  Args:
+#	db -
+#	file -
+#	OPTIONAL fmt - [table]
 #
 #  Returns:
 #	stream - 

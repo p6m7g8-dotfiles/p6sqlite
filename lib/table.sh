@@ -3,7 +3,13 @@
 ######################################################################
 #<
 #
-# Function: p6_sqlite_filter_pipe_to_table()
+# Function: p6_sqlite_filter_pipe_to_table(db, table, column_list, [sep=|])
+#
+#  Args:
+#	db -
+#	table -
+#	column_list -
+#	OPTIONAL sep - [|]
 #
 #>
 ######################################################################
