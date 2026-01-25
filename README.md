@@ -48,17 +48,17 @@ TODO: Add a short summary of this module.
 
 ##### p6sqlite/lib/db.sh
 
-- `p6_sqlite_db_create()`
+- `p6_sqlite_db_create(db)`
 - `p6_sqlite_db_drop(db)`
 
 ##### p6sqlite/lib/sql.sh
 
 - `stream  = p6_sqlite_filter_sql_run(db, [fmt=table])`
-- `stream  = p6_sqlite_sql_run()`
+- `stream  = p6_sqlite_sql_run(db, file, [fmt=table])`
 
 ##### p6sqlite/lib/table.sh
 
-- `p6_sqlite_filter_pipe_to_table()`
+- `p6_sqlite_filter_pipe_to_table(db, table, column_list, [sep=|])`
 
 ## Hierarchy
 
