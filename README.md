@@ -43,22 +43,41 @@ TODO: Add a short summary of this module.
 
 - `p6df::modules::p6sqlite::deps()`
 - `p6df::modules::p6sqlite::init(_module, dir)`
+  - Args:
+    - _module - 
+    - dir - 
 
 #### p6sqlite/lib
 
 ##### p6sqlite/lib/db.sh
 
 - `p6_sqlite_db_create(db)`
+  - Args:
+    - db - 
 - `p6_sqlite_db_drop(db)`
+  - Args:
+    - db - 
 
 ##### p6sqlite/lib/sql.sh
 
 - `stream  = p6_sqlite_filter_sql_run(db, [fmt=table])`
+  - Args:
+    - db - 
+    - OPTIONAL fmt - [table]
 - `stream  = p6_sqlite_sql_run(db, file, [fmt=table])`
+  - Args:
+    - db - 
+    - file - 
+    - OPTIONAL fmt - [table]
 
 ##### p6sqlite/lib/table.sh
 
 - `p6_sqlite_filter_pipe_to_table(db, table, column_list, [sep=|])`
+  - Args:
+    - db - 
+    - table - 
+    - column_list - 
+    - OPTIONAL sep - [|]
 
 ## Hierarchy
 
@@ -69,9 +88,13 @@ TODO: Add a short summary of this module.
 │   ├── db.sh
 │   ├── sql.sh
 │   └── table.sh
-└── README.md
+├── README.md
+└── t
+    ├── db.sh
+    ├── sql.sh
+    └── table.sh
 
-2 directories, 5 files
+3 directories, 8 files
 ```
 
 ## Author
